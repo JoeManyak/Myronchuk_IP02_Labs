@@ -28,5 +28,5 @@ func toRadian(angle float64) float64 {
 	return (angle * math.Pi) / 180 // Функція переведення в радіани
 }
 func sideCalculate(r, a float64) float64 {
-	return 2 * r * math.Sin(toRadian(a)) // Функція розрахунку сторони за радіусом вписаного кола та кутом (т. синусів)
+	return 2 * r * math.Sin(toRadian(a)) // Функція розрахунку сторони за радіусом описаного кола та кутом (т. синусів)
 }

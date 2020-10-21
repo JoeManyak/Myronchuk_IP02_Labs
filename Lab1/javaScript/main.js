@@ -13,7 +13,7 @@ function calculate() {
     }
 }
 
-function sideCalculate(a, r) { // Функція розрахунку сторони за радіусом вписаного кола та кутом (т. синусів)
+function sideCalculate(a, r) { // Функція розрахунку сторони за радіусом описаного кола та кутом (т. синусів)
     return 2 * r * Math.sin((toRadian(a)));
 }
 
