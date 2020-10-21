@@ -15,7 +15,7 @@ func main() {
 	_, _ = fmt.Scan(&c)
 	fmt.Print(">>> Вкажіть радіус описаного кола: ")
 	_, _ = fmt.Scan(&r)
-	if a+b+c == 180 { //перевірка існування трикутника
+	if a+b+c == 180 && a > 0 && b > 0 && c > 0 && r > 0 { //перевірка існування трикутника
 		side1 := sideCalculate(r, a)
 		side2 := sideCalculate(r, b)
 		side3 := sideCalculate(r, c)
