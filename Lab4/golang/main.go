@@ -10,8 +10,8 @@ func main() {
 	for i := 1.0; i <= 100; i++ {
 		s1 += math.Pow(-1, i) * (1 / i)
 		s2 += math.Pow(-1, i+1) * (1 / i)
+		fmt.Println("i: ", i, " s1: ", s1, " s2:", s2) //Для демонстрації
 	}
-	fmt.Println("s1: ", s1, " s2:", s2) //Для демонстрації
 	var res int
 	if s1 > s2 {
 		res = 1
