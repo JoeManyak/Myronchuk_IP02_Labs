@@ -1,12 +1,10 @@
 function check() {
    let count = 0;
-   for (let i=10;i<100;i++){
-       for (let j=10;j<100;j++){
-            if (i===j){
+   for (let i=1000;i<10000;i++){
+            if (i%101 === 0){
                 count++;
-                console.log(count,": ",i*100+j);
+                console.log(count,": ",i);
             }
-       }
    }
     document.getElementById("result").innerText = "Кількість шуканих чисел: "+count;
 }
